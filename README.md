@@ -1,4 +1,4 @@
-<h1>Week-6 Assignment - (Quarter 1)r</h1>
+<h1>Week-6 Assignment - (Quarter 1)</h1>
 
  - Write a program to convert the temperature from Celsius to Fahrenheit and vice verse.
 
