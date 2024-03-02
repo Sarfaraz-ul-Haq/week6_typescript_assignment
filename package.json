@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "<h2>Week-6 Assignment (Quarter 1)</h2>",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
