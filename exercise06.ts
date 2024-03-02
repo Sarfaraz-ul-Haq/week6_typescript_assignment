@@ -7,18 +7,26 @@
 //     Warm: 24°C to 29°C
 //      Hot: 29°C
 
-let tempInput = -2;
-
-if (tempInput < 0) {
-  console.log("You must wear warm clothes as the weather is very cold.");
-} else if (tempInput >= 0 && tempInput <= 10) {
-  console.log("You need to wear warm clothes as the weather is cold.");
-} else if (tempInput >= 10 && tempInput <= 18) {
-  console.log("You need to wear some warm clothes as the weather is cool.");
-} else if (tempInput >= 18 && tempInput <= 24) {
-  console.log("You don't need to wear warm clothes as the weather is not cold.");
-} else if (tempInput >= 24 && tempInput <= 29) {
-  console.log("You don't need to wear warm clothes as the weather is warm.");
-} else {
-  console.log("You don't need warm clothes in hot weather");
+function suggestClothing(temperatureInput: number) {
+  if (temperatureInput < 0) {
+    console.log("You must wear warm clothes as the weather is very cold.");
+  } else if (temperatureInput >= 0 && temperatureInput <= 10) {
+    console.log("You need to wear warm clothes as the weather is cold.");
+  } else if (temperatureInput >= 10 && temperatureInput <= 18) {
+    console.log("You need to wear some warm clothes as the weather is cool.");
+  } else if (temperatureInput >= 18 && temperatureInput <= 24) {
+    console.log(
+      "You don't need to wear warm clothes as the weather is not cold."
+    );
+  } else if (temperatureInput >= 24 && temperatureInput <= 29) {
+    console.log("You don't need to wear warm clothes as the weather is warm.");
+  } else {
+    console.log("You don't need warm clothes in hot weather");
+  }
 }
+
+suggestClothing(-1); // You must wear warm clothes as the weather is very cold.
+
+suggestClothing(15); // You need to wear some warm clothes as the weather is cool.
+
+suggestClothing(28); // You don't need to wear warm clothes as the weather is warm.
