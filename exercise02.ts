@@ -1,8 +1,9 @@
 //Write a program that calculates the percentage.
 
-function calculatePercentage(part: number, whole: number) {
+function calculatePercentage(part: number, whole: number): number {
   let percentage = (part / whole) * 100;
-  console.log(percentage, "%");
+  return percentage;
 }
 
-calculatePercentage(75, 100); //prints 75
+const percentage = calculatePercentage(75, 100);
+console.log(percentage); //prints 75
