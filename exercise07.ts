@@ -1,18 +1,19 @@
-//Write a program that checks if the given number is divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
+// Write a program that checks if the given number is divisible by 3 or 5 or both or not divisible by anyone show output accordingly.
 
-//Function to check if the given number is divisble by three or give
-function isDivisbleByThreeOrFiveOrBoth(userInput: number): void {
-  if (userInput % 3 == 0 && userInput % 5) {
-    console.log("Given number is divisble by both.");
-  } else if (userInput % 3 == 0) {
-    console.log("Given number is divisible by three.");
-  } else if (userInput % 5 == 0) {
-    console.log("Given number is divisble by five.");
+// function to check whether the given number is divisble by three or five or both
+function isDivisbleByThreeOrFiveOrBoth(userInput: number) {
+  if (userInput % 3 === 0 && userInput % 5 !== 0) {
+    console.log("The given number is divisible by 3");
+  } else if (userInput % 5 === 0 && userInput % 3 !== 0) {
+    console.log("The given number is divisble by 5");
+  } else if (userInput % 3 === 0 && userInput % 5 === 0) {
+    console.log("The given number is divisible by both 3 and 5");
   } else {
-    console.log("Given number is not divible by five.");
+    console.log("The given number is not divisble by 3 and 5");
   }
 }
-//Now using the "isDivisibleByThreeOrFiveOrBoth" function
-isDivisbleByThreeOrFiveOrBoth(30); //prints "Given number is divisible by three."
-isDivisbleByThreeOrFiveOrBoth(18); //prints "Given number is divisble by both."
-isDivisbleByThreeOrFiveOrBoth(50); //prints "Given number is divisble by five."
+
+isDivisbleByThreeOrFiveOrBoth(12);
+isDivisbleByThreeOrFiveOrBoth(50);
+isDivisbleByThreeOrFiveOrBoth(15);
+isDivisbleByThreeOrFiveOrBoth(22);
