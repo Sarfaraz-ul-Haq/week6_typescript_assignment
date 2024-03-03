@@ -2,26 +2,26 @@
 
 //Sunday = Day 0
 
-function getDayName(userInput: number): void {
-  if (userInput == 0) {
-    console.log("Sunday");
-  } else if (userInput == 1) {
-    console.log("Monday");
-  } else if (userInput == 2) {
-    console.log("Tuesday");
-  } else if (userInput == 3) {
-    console.log("Wednesday");
-  } else if (userInput == 4) {
-    console.log("Thursday");
-  } else if (userInput == 5) {
-    console.log("Friday");
-  } else if (userInput == 6) {
-    console.log("Saturday");
+function getDayName(userInput: number): string {
+  if (userInput === 0) {
+    return "Sunday";
+  } else if (userInput === 1) {
+    return "Monday";
+  } else if (userInput === 2) {
+    return "Tuesday";
+  } else if (userInput === 3) {
+    return "Wednesday";
+  } else if (userInput === 4) {
+    return "Thursday";
+  } else if (userInput === 5) {
+    return "Friday";
+  } else if (userInput === 6) {
+    return "Saturday";
   } else {
-    console.log("Invalid input!");
+    return "Invalid input";
   }
 }
 
-//Now using the getDayName function
-let userInput = 4;
-getDayName(userInput);
+console.log(getDayName(0)); // returns "Sunday"
+console.log(getDayName(5)); // returns "Friday"
+console.log(getDayName(10)); // return "Invalid input"
